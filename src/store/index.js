@@ -23,7 +23,7 @@ export default new Vuex.Store({
     getupdatalength(state) {
       return state.list.filter(item => item.done === true).length;
     },
-    // 
+    // 通数据里的done来判断数据的状态
     infoLits(state) {
       if (state.valKey === 'all') {
         return state.list
@@ -36,7 +36,6 @@ export default new Vuex.Store({
       }
       return state.list
     }
-
   }
   ,
   mutations: {

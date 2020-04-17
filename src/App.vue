@@ -9,7 +9,7 @@
       </a-list-item>
       <!--  -->
       <div slot="footer" class="footer">
-        <span>0条剩余</span>
+        <span>丽</span>
         <a-button-group>
           <a-button :type="valkey === 'all' ? 'primary':'default'" @click="changeList('all')">全部</a-button>
           <a-button
@@ -56,7 +56,6 @@ export default {
     // 根据 id 删除对应的数据
     remove(id) {
       console.log(id);
-
       this.$store.commit("removeM", id);
     },
     // 监听e.target.checked
@@ -75,7 +74,6 @@ export default {
     // 修改页面底部的active
     changeList(key) {
       console.log(key);
-
       this.$store.commit("changeKey", key);
     }
   }
